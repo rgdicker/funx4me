@@ -1,7 +1,7 @@
 #' @export
 where.in <- function(bigvec,smallvec,fullvec=F){
     # Where in bigvec is smallvec?
-    # So e.g. where.in(bigvec[10:12],bigvec) == 10:12
+    # So e.g. where.in(bigvec,bigvec[10:12]) == 10
     N <- length(bigvec)
     n <- length(smallvec)
     b <- 1:n
